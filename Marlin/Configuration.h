@@ -80,7 +80,7 @@
  * Z-Probe type (must be none or one of them)
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
-//#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
+#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
 //#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
@@ -93,7 +93,7 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-//#define BILINEAR
+#define BILINEAR
 //#define UBL
 #define MANUAL
 
@@ -102,10 +102,10 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        39
 #define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
-#define SENSOR_BEHIND      0
+#define SENSOR_BEHIND      21
 
 /**
  * Number of grid points in each direction
