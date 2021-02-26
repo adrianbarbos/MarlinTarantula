@@ -67,14 +67,14 @@
  * Primary Extruder steps per mm (plugged in to E0 port on controller)
  * (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E0_STEPS      100 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
+#define E0_STEPS      97 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
 //#define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
 
 /**
  * Z Axis steps per mm (Default for stock lead screw is 1600)
  * If you install a lead screw with a different pitch and/or lead, change this
  */
-#define Z_STEPS      400*1.014 // Stock lead screw
+#define Z_STEPS      397.6 //400*1.014 // Stock lead screw
 
 /**
  * Z-Probe type (must be none or one of them)
@@ -102,10 +102,10 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        39
-#define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
-#define SENSOR_BEHIND      21
+#define SENSOR_LEFT        0
+#define SENSOR_RIGHT       39
+#define SENSOR_FRONT       21
+#define SENSOR_BEHIND      0
 
 /**
  * Number of grid points in each direction
@@ -154,9 +154,9 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 9.84
-#define  hot_Ki 0.50
-#define  hot_Kd 48.17
+#define  hot_Kp 29.32 //9.84
+#define  hot_Ki 2.89 //0.50
+#define  hot_Kd 74.47 //48.17
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
